@@ -79,11 +79,11 @@ console.log(userService.items);
 */
 
 //test list method
-console.log("\n List of items: ",userService.list());
+console.log("\n List of items in array: ",userService.list());
 
 // test get method
-console.log("\n",userService.get(2));
-console.log(userService.get(3)); 
+console.log("\nGet item 2: ", userService.get(2));
+console.log("Get item 3: ", userService.get(3)); 
 
 // test update method 
 // before update
@@ -93,7 +93,6 @@ userService.update(1, { school: "CFA" });
 // after update
 console.log("After update: ", userService.get(1));
 
-
 // test remove method
 // before remove
 console.log("\nBefore remove: ", userService.list());
@@ -101,7 +100,6 @@ console.log("\nBefore remove: ", userService.list());
 userService.remove(2);
 // after remove
 console.log("After remove: ", userService.list());
-
 
 // before destroy
 console.log("\nBefore destroy: ", userService.list());
